@@ -7,7 +7,7 @@ interface ErrorMessage {
 }
 
 const NotFoundPage: React.FC<{ errorMessage?: ErrorMessage }> = ({ errorMessage }) => {
-  const navigate = useNavigate(); // Используем хук для навигации
+  const navigate = useNavigate();
 
   return (
     <div className="py-4 home page-container">
