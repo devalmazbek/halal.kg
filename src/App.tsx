@@ -1,11 +1,17 @@
+import React, {Suspense} from "react";
+import { RouterProvider } from 'react-router-dom'
+
+import { Spinner } from "./shared/spinner/index.tsx";
+
+
+import {ROUTER} from "./router.tsx";
+
 function App() {
 
   return (
-    <>
-      <div>
-        halal kg
-      </div>
-    </>
+    <Suspense fallback={<Spinner />}>
+    <RouterProvider router={ROUTER}></RouterProvider>
+  </Suspense>
   )
 }
 
