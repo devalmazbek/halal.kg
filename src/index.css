@@ -14,4 +14,11 @@ body {
 .text-color {
     color: #59A94E;
 }
+.bg-primary {
+    background-color: #59A94E;
+}
+
+.border-primary {
+    border: 1px solid #59A94E;
+}
 

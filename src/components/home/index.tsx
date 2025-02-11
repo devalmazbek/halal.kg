@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from '../../shared/button';
 
 export default function HomePage() {
   return (
     <div>
-      home
+      <Button text='Халал сертификатын алу' />
     </div>
   )
 }

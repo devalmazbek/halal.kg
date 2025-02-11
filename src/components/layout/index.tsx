@@ -11,8 +11,8 @@ export default function AppLayout() {
   const style = isHomePage ? 'home' : 'bg-gray-100';
 
   return(
-    <div className="flex flex-col h-screen">
-      <div className="container mx-auto">
+    <div className="flex flex-col">
+      <div className="min-h-dvh container mx-auto">
         <Header/>
         <div className={`flex-grow ${style}`}>
           <main className="container mx-auto">
