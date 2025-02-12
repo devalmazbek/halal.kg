@@ -8,14 +8,17 @@ import Footer from "./footer";
 export default function AppLayout() {
   const location = useLocation();
   const isHomePage =  location.pathname === '/';
-  const style = isHomePage ? 'home' : 'bg-gray-100';
+  const style = isHomePage ? 'home' : 'container mx-auto';
 
   return(
     <div className="flex flex-col">
-      <div className="min-h-dvh container mx-auto">
-        <Header/>
-        <div className={`flex-grow ${style}`}>
-          <main className="container mx-auto">
+      <div className="min-h-dvh">
+        <div className="container mx-auto">
+          <Header/>
+        </div>
+        
+        <div className={`flex-grow`}>
+          <main className={`${style} mt-2`}>
             <div className="">
               {/* <Breadcrumbs/> */}
             </div>
@@ -24,7 +27,9 @@ export default function AppLayout() {
         </div>
       </div>
       <div className='silver'>
-        <Footer/>
+        <div className="container mx-auto">
+          <Footer/>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import NotFoundPage from "../../not-found-page/index.tsx";
 
 import {Routes} from "./routes.ts";
 
-const HomePage = lazy(() => import("../../home"));
+const HomePage = lazy(() => import("../../../pages/home"));
 
 export const NavigationRouteLists = [
   {
