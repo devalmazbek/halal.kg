@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 
 import { sliderData } from '../model/sliderData';
 import { sliderDataTypes } from '../model/sliderTypes';
+import Button from '../../../shared/button';
 
 export default function Slider() {
   return (
@@ -21,7 +22,7 @@ export default function Slider() {
         className="w-full"
       >
         {sliderData.map((item: sliderDataTypes) => (
-          <SwiperSlide key={item.id} className="relative min-h-[82dvh] flex items-center justify-center text-white">
+          <SwiperSlide key={item.id} className="relative min-h-[86dvh] flex items-center justify-center text-white">
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${item.img})` }}
@@ -35,6 +36,8 @@ export default function Slider() {
               <p className="text-base text-left text-gray-300 font-semibold">
                 {item.description}
               </p>
+
+              <Button text='Толугурак' size='large' className='mt-7'/>
             </div>
           </SwiperSlide>
         ))}
