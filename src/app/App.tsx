@@ -1,7 +1,7 @@
 import React, {Suspense} from "react";
 import { RouterProvider } from 'react-router-dom'
 
-import { Spinner } from "./shared/spinner/index.tsx";
+import { Spinner } from "../shared/spinner/index.tsx";
 
 
 import {ROUTER} from "./router.tsx";
@@ -9,7 +9,7 @@ import {ROUTER} from "./router.tsx";
 function App() {
 
   return (
-    <Suspense fallback={<Spinner />}>
+  <Suspense fallback={<Spinner />}>
     <RouterProvider router={ROUTER}></RouterProvider>
   </Suspense>
   )
