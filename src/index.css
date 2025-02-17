@@ -22,7 +22,7 @@ body {
     border: 1px solid #59A94E;
 }
 
-.home .swiper-pagination {
+.slider .swiper-pagination {
     bottom: 50px !important;
     left: 50% !important;
     width: 100px !important;
@@ -31,7 +31,7 @@ body {
     border-radius: 60px;
 }
 
-.swiper-pagination-bullet-active {
+.slider .swiper-pagination-bullet-active {
     background: #fff !important;
 }
 

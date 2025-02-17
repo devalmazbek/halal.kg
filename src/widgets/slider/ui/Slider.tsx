@@ -12,7 +12,7 @@ import Button from '../../../shared/button';
 
 export default function Slider() {
   return (
-    <div className='relative w-full'>
+    <div className='relative w-full slider'>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -29,11 +29,11 @@ export default function Slider() {
             />
           
             <div className="absolute inset-0 bg-black bg-opacity-50" />
-            <div className="relative w-[500px] flex flex-col justify-center items-start z-3 text-center px-5 min-h-[inherit]">
+            <div className="relative container mx-auto flex flex-col justify-center items-start z-3 text-center px-5 min-h-[inherit]">
               <h1 className="text-7xl font-bold">
                 {item.title}
               </h1>
-              <p className="text-base text-left text-gray-300 font-semibold">
+              <p className="max-w-[500px] text-base text-left text-gray-300 font-semibold">
                 {item.description}
               </p>
 
