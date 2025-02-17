@@ -1,10 +1,10 @@
 import React from "react";
 import { createBrowserRouter } from 'react-router-dom'
 
-import {NavigationRouteLists} from "./components/routes/constants/config.tsx";
+import {NavigationRouteLists} from "./routes/constants/config.tsx";
 
-import AppLayout from "./components/layout";
-import NotFoundPage from "./components/not-found-page";
+import AppLayout from "./layout";
+import NotFoundPage from "../shared/not-found-page";
 
 export const ROUTER = createBrowserRouter([
   {

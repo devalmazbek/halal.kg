@@ -1,11 +1,16 @@
 import React from 'react'
 
 import Slider from '../../widgets/slider'
+import Statistic from '../../widgets/statistic'
 
 export default function HomePage() {
   return (
     <div>
       <Slider />
+      <section className='container mx-auto'>
+        <h2 className='text-5xl mt-4'>Халал Даму</h2>
+        <Statistic/>
+      </section>
     </div>
   )
 }

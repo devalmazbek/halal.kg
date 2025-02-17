@@ -1,10 +1,10 @@
 import React, {lazy} from "react";
 
-import NotFoundPage from "../../not-found-page/index.tsx";
+import NotFoundPage from "../../../shared/not-found-page/index.tsx";
 
 import {Routes} from "./routes.ts";
 
-const HomePage = lazy(() => import("../../../pages/home"));
+const HomePage = lazy(() => import("../../../pages/home/index.ts"));
 
 export const NavigationRouteLists = [
   {
