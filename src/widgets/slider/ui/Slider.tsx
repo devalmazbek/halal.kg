@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import { sliderData } from '../model/sliderData';
 import { sliderDataTypes } from '../model/sliderTypes';
-import Button from '../../../shared/button';
+import Button from '../../../shared/ui/button';
 
 export default function Slider() {
   return (
@@ -33,7 +33,7 @@ export default function Slider() {
               <h1 className="text-7xl font-bold">
                 {item.title}
               </h1>
-              <p className="max-w-[500px] text-base text-left text-gray-300 font-semibold">
+              <p className="max-w-[500px] text-base text-left text-gray-300 font-semibold ">
                 {item.description}
               </p>
 

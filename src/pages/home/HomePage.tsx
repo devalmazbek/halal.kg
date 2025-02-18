@@ -9,6 +9,7 @@ export default function HomePage() {
       <Slider />
       <section className='container mx-auto'>
         <h2 className='text-5xl mt-4'>Халал Даму</h2>
+        <p className='uppercase text-base font-medium my-4 text-gray-400'>біздің көрсеткіштер</p>
         <Statistic/>
       </section>
     </div>

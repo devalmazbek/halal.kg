@@ -1,9 +1,9 @@
 import React from 'react'
 
-import instagram from '../../../public/images/icons/instagram.svg'
-import facebook from '../../../public/images/icons/facebook.svg'
-import telegram from '../../../public/images/icons/telegram.svg'
-import whatsapp from '../../../public/images/icons/whatsapp.svg'
+import instagram from '../../../../public/images/icons/instagram.svg'
+import facebook from '../../../../public/images/icons/facebook.svg'
+import telegram from '../../../../public/images/icons/telegram.svg'
+import whatsapp from '../../../../public/images/icons/whatsapp.svg'
 
 export default function SocialIcon() {
   return (

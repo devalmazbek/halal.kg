@@ -1,6 +1,6 @@
 import React, {lazy} from "react";
 
-import NotFoundPage from "../../../shared/not-found-page/index.tsx";
+import NotFoundPage from "../../../shared/ui/not-found-page/index.tsx";
 
 import {Routes} from "./routes.ts";
 

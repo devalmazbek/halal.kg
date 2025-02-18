@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#59A94E'
+        primary: '#59A94E',
+        searchBackground: '',
       }
     },
   },

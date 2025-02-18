@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import Icon from '../../icon';
+import Icon from '../icon';
 
 interface CardProps {
   title: string;
@@ -17,10 +17,10 @@ export default function Card({ title, subtitle, icon, withIcon = false, descript
       {withIcon && icon && <Icon icon={icon} />}
       <div className='mt-3'>
         <p className='mb-3'>
-          <span className='text-4xl font-semibold text-emerald-600 uppercase'>{title}</span>
+          <span className='text-4xl font-semibold text-primary uppercase'>{title}</span>
           {subtitle && <span> - {subtitle}</span>}
         </p>
-        <p className='uppercase text-sm'>{description}</p>
+        <p className='uppercase text-base font-normal'>{description}</p>
       </div>
     </div>
   );

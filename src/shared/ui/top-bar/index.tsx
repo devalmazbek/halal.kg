@@ -6,8 +6,8 @@ export default function TopBar() {
   return (
     <div className='flex items-center'>
       <div className='flex items-center flex-grow'>
-        <h2 className='w-[30rem] font-medium uppercase text-xs leading-1 text-slate-500 '>Кыргызстан Мусулмандар Дин башкармалыгынын Халал иштери боюнча кызматтарды жана продукцияларды сертификациялоо бөлүмү</h2>
-        <div className='flex relative flex-grow bg-[#59a94e40] rounded-full bg-emerald-200 mr-4 overflow-hidden h-9 p-1'>
+        <h2 className='max-w-md font-medium uppercase text-xs leading-1 text-slate-500 '>Кыргызстан Мусулмандар Дин башкармалыгынын Халал иштери боюнча кызматтарды жана продукцияларды сертификациялоо бөлүмү</h2>
+        <div className='flex relative flex-grow rounded-full bg-[#59a94e40] mr-4 ml-3 overflow-hidden h-9 p-1'>
           <button type="submit"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.0239 10.0171L14.1792 13.1724" stroke="#59A94E" stroke-width="2"></path>
           <circle cx="6.81641" cy="6.51123" r="4.95996" stroke="#59A94E" stroke-width="2"></circle>

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 
-import Icon from '../../../shared/icon'
-import SocialIcon from '../../../shared/social-icon'
+import Icon from '../../../shared/ui/icon'
+import SocialIcon from '../../../shared/ui/social-icon'
 
 export default function Footer() {
   return (

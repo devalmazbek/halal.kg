@@ -12,11 +12,11 @@ interface ButtonProps {
   variant?: ButtonVariant;
   className?: string;
   iconClassName?: string;
-  hoverTextColor?: string;
+  hover?: boolean;
   onClick?: () => void;
 }
 
-export default function Button({ text, icon, size = "medium", variant = "primary", className, iconClassName, hoverTextColor = "text-primary", onClick 
+export default function Button({ text, icon, size = "medium", variant = "primary", className, iconClassName, hover = true, onClick 
 }: ButtonProps) {
   
   const sizeClasses = {
@@ -26,7 +26,7 @@ export default function Button({ text, icon, size = "medium", variant = "primary
   };
 
   const variantClasses = {
-    primary: `bg-primary border-primary text-stone-50 hover:bg-transparent hover:${hoverTextColor}`,
+    primary: `bg-primary border-primary text-stone-50 ${hover && "hover:bg-transparent hover:text-primary"}`,
     secondary: "bg-gray-600 hover:bg-transparent text-white",
     danger: "bg-red-600 hover:bg-transparent text-white",
   };
