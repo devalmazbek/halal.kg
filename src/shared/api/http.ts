@@ -2,13 +2,13 @@ import axios from 'axios';
 import env from '../config';
 
 const api = axios.create({
-  baseURL: env.API_URL, // URL из .env
+  baseURL: env.API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-// 🔐 Добавляем токен в запрос, если он есть
+// adding the token to the request, if there is one 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
@@ -17,14 +17,14 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// 🛑 Обработка ошибок (например, разлогинивание при 401)
+// 🛑 Error handling (for example, logging out at 401)
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
       console.error('Unauthorized! Logging out...');
-      localStorage.removeItem('token'); // Удаляем токен
-      window.location.href = '/login'; // Перенаправляем на логин
+      localStorage.removeItem('token'); // remove token
+      window.location.href = '/login'; // redirect to login page
     }
     return Promise.reject(error);
   }
