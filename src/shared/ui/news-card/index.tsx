@@ -11,16 +11,14 @@ interface NewsCardProps extends Pick<ProductType, "title" | "meta"> {
 
 export default function NewsCard({title, description, meta, thumbnail}: NewsCardProps) {
   return (
-    <div>
-      <Card
-        hoverable
-        style={{ width: 240 }}
-        cover={<img alt={title} src={thumbnail} />}
-      >
-        <h2><span>{meta.createdAt}</span></h2>
-        <h2>{title}</h2>
-        {description && <>{description}</>}
-      </Card>
-    </div>
+    <Card
+      hoverable
+      style={{ minWidth: 240 }}
+      cover={<img alt={title} src={thumbnail} />}
+    >
+      <h2><span>{meta.createdAt}</span></h2>
+      <h2>{title}</h2>
+      {description && <>{description}</>}
+    </Card>
   )
 }

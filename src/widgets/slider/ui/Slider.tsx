@@ -12,14 +12,14 @@ import Button from '../../../shared/ui/button';
 
 export default function Slider() {
   return (
-    <div className='relative w-full slider'>
+    <div className='relative w-full'>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
-        className="w-full"
+        className="slider w-full"
       >
         {sliderData.map((item: sliderDataTypes) => (
           <SwiperSlide key={item.id} className="relative min-h-[86dvh] flex items-center justify-center text-white">
