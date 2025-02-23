@@ -13,7 +13,8 @@ export default function HomePage() {
         <p className='uppercase text-base font-medium my-4 text-gray-400'>біздің көрсеткіштер</p>
         <Statistic/>
       </section>
-      <section className='container mx-auto'>
+      <section className='container mx-auto my-6'>
+        <h2 className='text-4xl font-semibold mb-5'>Соңғы жаңалықтар</h2>
         <LastProducts />
       </section>
     </div>

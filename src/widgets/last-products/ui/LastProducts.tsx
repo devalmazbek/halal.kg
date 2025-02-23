@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -26,19 +27,21 @@ export default function LastProducts() {
 
 
   return (
-    <div className='w-full'>
+    <div className='w-full last_news'>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
-        slidesPerView={3}
-        pagination={{ clickable: true, modifierClass: "last_news_pagination" }}
-        // autoplay={{ delay: 3000 }}
-        className='slider'
+        slidesPerView={4}
+        pagination={{ clickable: true, modifierClass: "last_news_pagination_" }}
+        autoplay={{ delay: 3000 }}
+        className='slider flex flex-wrap' 
       >
         {lastNews.length > 0 && lastNews.map((item: ProductType) => (
           <SwiperSlide key={item.id} className='flex'>
             <div className='max-w-80'>
-              <NewsCard title={item.title} thumbnail={item.thumbnail} meta={item.meta}/>
+              <Link to={"#"}>
+                <NewsCard title={item.title} thumbnail={item.thumbnail} meta={item.meta}/>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

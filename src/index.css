@@ -5,7 +5,7 @@
 
 @layer components {
     .slider .swiper-pagination {
-      @apply px-4 !bottom-10 !left-1/2 !transform !-translate-x-1/2 !border !border-white !rounded-full;
+      @apply px-4 !bottom-10 !left-1/2 !w-auto !transform !-translate-x-1/2 !border !border-white !rounded-full;
     }
   
     .slider .swiper-pagination-bullet {
@@ -14,6 +14,10 @@
   
     .slider .swiper-pagination-bullet-active {
       @apply !bg-primary !opacity-100 !scale-125;
+    }
+
+    .slider .last_news_pagination_bullets {
+      @apply relative !border !border-gray-400 !text-center !w-auto !mx-auto inline-block mt-14
     }
   }
   
@@ -38,14 +42,10 @@ body {
     border: 1px solid #59A94E;
 }
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: auto !important;
+.last_news .ant-card-body {
+  @apply !bg-gray-200
 }
 
-.last_news_pagination {
-    margin-top: 15px !important;
-    background-color: red !important;
-}
 
 
 
