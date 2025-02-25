@@ -1,9 +1,12 @@
 import React from 'react'
 import { Divider } from 'antd';
 
-import TopBar from '../../../shared/ui/top-bar'
 import { Menu } from '../../../entity/menu/ui/Menu'
+
+import TopBar from '../../../shared/ui/top-bar'
 import Button from '../../../shared/ui/button'
+
+import { LanguageSwitcher } from '../../../widgets';
 
 import logo from '../../../../public/images/header/logo.svg'
 import {menu as menuItems} from '../../../entity/menu/model/store';
@@ -20,6 +23,7 @@ export default function Header() {
           <Divider className='p-0 my-1' />
           <div className='flex justify-between items-center'>
             <Menu items={menuItems} />
+            <LanguageSwitcher />
             <Button className='mt-2' text='Халал сертификатын алу' />
           </div>
         </div>

@@ -17,7 +17,7 @@
     }
 
     .slider .last_news_pagination_bullets {
-      @apply relative !border !border-gray-400 !text-center !w-auto !mx-auto inline-block mt-14
+      @apply relative !border !border-gray-300 !text-center !w-auto !mx-auto inline-block mt-14
     }
   }
   
