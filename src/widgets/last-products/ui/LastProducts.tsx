@@ -34,11 +34,17 @@ export default function LastProducts() {
         slidesPerView={4}
         pagination={{ clickable: true, modifierClass: "last_news_pagination_" }}
         autoplay={{ delay: 3000 }}
-        className='slider flex flex-wrap' 
+        className='slider flex flex-wrap'
+        breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          640: { slidesPerView: 2, spaceBetween: 20 }, 
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+          1280: { slidesPerView: 4, spaceBetween: 40 },
+        }}
       >
         {lastNews.length > 0 && lastNews.map((item: ProductType) => (
-          <SwiperSlide key={item.id} className='flex'>
-            <div className='max-w-80'>
+          <SwiperSlide key={item.id} className='flex justify-center'>
+            <div className='max-w-80 mx-auto'>
               <Link to={"#"}>
                 <NewsCard title={item.title} thumbnail={item.thumbnail} meta={item.meta}/>
               </Link>
