@@ -16,8 +16,16 @@
       @apply !bg-primary !opacity-100 !scale-125;
     }
 
-    .slider .last_news_pagination_bullets {
-      @apply relative !border !border-gray-300 !text-center !w-auto !mx-auto inline-block mt-14
+    .last_news_slider .swiper-pagination {
+      @apply px-2 !left-1/2 !w-auto !transform !-translate-x-1/2 !border !border-gray-300 !rounded-full;
+    }
+  
+    .last_news_slider .swiper-pagination-bullet {
+      @apply !bg-gray-400 !w-2 !h-2 !opacity-50 !transition-all mx-1;
+    }
+  
+    .last_news_slider .swiper-pagination-bullet-active {
+      @apply !bg-primary !opacity-100 !scale-125;
     }
   }
   
@@ -42,9 +50,6 @@ body {
     border: 1px solid #59A94E;
 }
 
-.last_news .ant-card-body {
-  @apply !bg-gray-200
-}
 
 
 

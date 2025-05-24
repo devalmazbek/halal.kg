@@ -1,5 +1,3 @@
-import React from 'react'
-
 import SocialIcon from '../social-icon'
 
 export default function TopBar() {

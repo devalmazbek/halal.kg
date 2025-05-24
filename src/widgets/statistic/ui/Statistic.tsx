@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { statistic as statisticData } from '../model/data'
 
 import { statisticDataType } from '../model/type' 

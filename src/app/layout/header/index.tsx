@@ -1,4 +1,3 @@
-import React from 'react'
 import { Divider } from 'antd';
 
 import { Menu } from '../../../entity/menu/ui/Menu'

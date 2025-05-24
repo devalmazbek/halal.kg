@@ -1,4 +1,4 @@
-import React, {lazy} from "react";
+import {lazy} from "react";
 
 import NotFoundPage from "../../../shared/ui/not-found-page/index.tsx";
 

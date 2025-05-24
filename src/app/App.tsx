@@ -1,4 +1,4 @@
-import React, {Suspense} from "react";
+import {Suspense} from "react";
 import { RouterProvider } from 'react-router-dom'
 
 import { Spinner } from "../shared/ui/spinner/index.tsx";

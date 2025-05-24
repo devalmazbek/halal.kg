@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 
 import Icon from '../../../shared/ui/icon'
